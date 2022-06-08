@@ -91,11 +91,12 @@
     cursor: pointer;
 }
 .contenido{
-    display: none;
+    display:none;
 }
 
 #contenido{
-    padding: 3% 5%;
+    padding: 1% 5%;
+    transition: all 1s;
 }
 
 #contenido h3{
@@ -103,11 +104,20 @@
     text-align: center;
 
 }
+#inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #menu{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-
+    margin-bottom: 30px;
+    background-color: rgb(255, 37, 95);
+    width: 700px;
+    align-items: center;
+    border-radius: 20px;
 }
 
 div .opcion img{
@@ -117,14 +127,67 @@ div .opcion img{
 }
 
 div .opcion{
+    box-sizing: border-box;
     display: inline-block;
-    width: 75px;
+    width: 90px;
+    height: 120px;
     border-style: solid;
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
-    margin: 20px;
+    margin: 15px;
+    padding: 10px 8px;
+    background-color: white;
 }
 div .opcion h4{
     text-align: center;
+}
+div .opcion a{
+    text-decoration: none;
+    color: black;
+}
+div .opcion:hover{
+    border-color: white;
+    border-width: 3px;
+    background-color: rgb(209, 211, 213);
+    transition: 0.4s;
+}
+
+span #spanl{
+    float: left;
+    width: 250px;
+    height: 500px;
+}
+div .span{
+    width: 260px;
+    text-align: center;
+
+}
+.span a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.producto img{
+    width: 220px;
+    height: 320px;
+}
+.producto{
+    box-sizing: border-box;
+    display:inline-block;
+    width: 250px;
+    padding: 22px 25px;
+    padding-right: 0%;
+    text-align: center;
+}
+
+#info-productos{
+    display:flex;
+    width: 1200px;
+}
+.producto span{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
 }
